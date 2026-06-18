@@ -1,4 +1,4 @@
-async function submitComplaint(){
+async function submitComplaint() {
 
     const name =
     document.getElementById("name").value;
@@ -9,27 +9,29 @@ async function submitComplaint(){
     const complaint =
     document.getElementById("complaint").value;
 
-    if(
+    if (
         name.trim() === "" ||
         village.trim() === "" ||
         complaint.trim() === ""
-    ){
+    ) {
         alert("Please fill all fields.");
         return;
     }
 
-    try{
+    try {
 
         const response =
         await fetch(
-            "http://127.0.0.1:5000/complaint",
+            "https://gramsathi-ai-backend.onrender.com/complaint",
             {
-                method:"POST",
-                headers:{
+                method: "POST",
+
+                headers: {
                     "Content-Type":
                     "application/json"
                 },
-                body:JSON.stringify({
+
+                body: JSON.stringify({
                     name,
                     village,
                     complaint
@@ -58,7 +60,8 @@ async function submitComplaint(){
         document.getElementById("complaint").value = "";
 
     }
-    catch(error){
+
+    catch (error) {
 
         document.getElementById(
             "status"
@@ -70,36 +73,39 @@ async function submitComplaint(){
 }
 
 
-async function trackComplaint(){
+
+async function trackComplaint() {
 
     const complaintId =
     document.getElementById(
         "trackId"
     ).value;
 
-    if(
+    if (
         complaintId.trim() === ""
-    ){
+    ) {
+
         alert(
             "Enter Complaint ID"
         );
+
         return;
     }
 
-    try{
+    try {
 
         const response =
         await fetch(
-            "http://127.0.0.1:5000/track-complaint",
+            "https://gramsathi-ai-backend.onrender.com/track-complaint",
             {
-                method:"POST",
+                method: "POST",
 
-                headers:{
+                headers: {
                     "Content-Type":
                     "application/json"
                 },
 
-                body:JSON.stringify({
+                body: JSON.stringify({
                     complaint_id:
                     complaintId
                 })
@@ -109,7 +115,7 @@ async function trackComplaint(){
         const data =
         await response.json();
 
-        if(data.found){
+        if (data.found) {
 
             document.getElementById(
                 "trackResult"
@@ -118,40 +124,41 @@ async function trackComplaint(){
             `
             <div class="card">
 
-            <h3>
-            Complaint Found ✅
-            </h3>
+                <h3>
+                Complaint Found ✅
+                </h3>
 
-            <p>
-            <strong>ID:</strong>
-            ${complaintId}
-            </p>
+                <p>
+                <strong>ID:</strong>
+                ${complaintId}
+                </p>
 
-            <p>
-            <strong>Name:</strong>
-            ${data.name}
-            </p>
+                <p>
+                <strong>Name:</strong>
+                ${data.name}
+                </p>
 
-            <p>
-            <strong>Village:</strong>
-            ${data.village}
-            </p>
+                <p>
+                <strong>Village:</strong>
+                ${data.village}
+                </p>
 
-            <p>
-            <strong>Issue:</strong>
-            ${data.complaint}
-            </p>
+                <p>
+                <strong>Issue:</strong>
+                ${data.complaint}
+                </p>
 
-            <p>
-            <strong>Status:</strong>
-            ${data.status}
-            </p>
+                <p>
+                <strong>Status:</strong>
+                ${data.status}
+                </p>
 
             </div>
             `;
 
         }
-        else{
+
+        else {
 
             document.getElementById(
                 "trackResult"
@@ -165,7 +172,8 @@ async function trackComplaint(){
         }
 
     }
-    catch(error){
+
+    catch (error) {
 
         document.getElementById(
             "trackResult"

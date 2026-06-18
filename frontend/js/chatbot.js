@@ -58,8 +58,8 @@ async function sendMessage() {
     try {
 
         const response =
-        await fetch(
-            "http://127.0.0.1:5000/chat",
+       await fetch(
+    "https://gramsathi-ai-backend.onrender.com/chat",
             {
                 method: "POST",
 
