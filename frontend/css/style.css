@@ -414,3 +414,12 @@ color:#90ee90;
 
     font-size:16px;
 }
+.chat-controls{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.chat-controls button{
+    flex: 1;
+}

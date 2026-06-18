@@ -65,3 +65,29 @@
     }
 
 }
+@media (max-width: 768px) {
+
+    .chat-controls{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .chat-controls button{
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    #userInput{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .chat-container{
+        width: 95%;
+        margin: auto;
+    }
+
+}
