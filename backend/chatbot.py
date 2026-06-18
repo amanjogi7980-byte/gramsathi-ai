@@ -9,7 +9,7 @@ genai.configure(
 )
 
 model = genai.GenerativeModel(
-    "gemini-2.0-flash"
+    "gemini-2.5-flash"
 )
 
 def get_chat_response(message):
@@ -20,7 +20,7 @@ def get_chat_response(message):
             f"""
             You are GramSathi AI.
 
-            Help Indian rural citizens.
+            Help Indian rural citizens in simple Hindi.
 
             User Question:
             {message}
