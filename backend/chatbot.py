@@ -31,6 +31,4 @@ def get_chat_response(message):
 
     except Exception as e:
 
-        return (
-            "Sorry, AI service is temporarily unavailable."
-        )
+        return f"ERROR: {str(e)}"
