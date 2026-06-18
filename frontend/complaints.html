@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <nav class="navbar">
+<button id="themeBtn"
+onclick="toggleTheme()">
+🌙
+</button>
+<div class="logo">
+🌾 GramSathi AI
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="schemes.html">Schemes</a></li>
+
+<li><a href="documents.html">Documents</a></li>
+
+<li><a href="chatbot.html">AI Assistant</a></li>
+
+<li><a href="complaints.html">Complaints</a></li>
+
+<li><a href="about.html">About</a></li>
+
+</ul>
+
+</nav>
+
+<div class="complaint-container">
+
+<h2>Village Complaint Portal</h2>
+
+<input type="text" id="name" placeholder="Your Name">
+<br><br>
+
+<input type="text" id="village" placeholder="Village Name">
+<br><br>
+
+<textarea id="complaint"
+placeholder="Write Complaint"
+rows="6"
+cols="50"></textarea>
+
+<br><br>
+
+<button class="btn"
+onclick="submitComplaint()">
+Submit Complaint
+</button>
+<hr><br>
+
+<h2>Track Complaint</h2>
+
+<input
+type="text"
+id="trackId"
+placeholder="Enter Complaint ID"
+>
+
+<br><br>
+
+<button
+class="btn"
+onclick="trackComplaint()"
+>
+Track Complaint
+</button>
+
+<p id="trackResult"></p>
+
+<p id="status"></p>
+
+</div>
+
+<script src="js/complaints.js"></script>
+<script src="js/theme.js"></script>
+
+</body>
+</html>

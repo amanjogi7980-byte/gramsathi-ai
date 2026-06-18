@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheme Finder - GramSathi AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <button id="themeBtn"
+onclick="toggleTheme()">
+🌙
+</button>
+    <div class="logo">🌾 GramSathi AI</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schemes.html">Schemes</a></li>
+        <li><a href="documents.html">Documents</a></li>
+        <li><a href="chatbot.html">AI Assistant</a></li>
+        <li><a href="complaints.html">Complaints</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+
+<section class="about">
+
+    <h2>Government Scheme Finder</h2>
+
+    <p>Select your category and discover schemes.</p>
+
+    <br><br>
+<input
+type="text"
+id="schemeSearch"
+placeholder="Search Schemes..."
+onkeyup="searchSchemes()"
+>
+
+<br><br>
+    <label for="category">Select Category</label>
+    <select id="category">
+        <option value="">Select Category</option>
+        <option value="farmer">Farmer</option>
+        <option value="student">Student</option>
+        <option value="women">Women</option>
+        <option value="senior">Senior Citizen</option>
+    </select>
+
+    <button onclick="findSchemes()" class="btn">
+        Find Schemes
+    </button>
+
+</section>
+
+<section id="results" class="features">
+
+</section>
+
+<script src="js/schemes.js"></script>
+<script src="js/theme.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+@media (max-width: 768px){
+
+    .navbar{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .nav-links li{
+        margin: 10px 0;
+    }
+
+    .hero h1{
+        font-size: 32px;
+    }
+
+    .hero-content{
+        width: 95%;
+    }
+
+    .features{
+        padding: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .chat-container{
+        width: 95%;
+    }
+
+    select{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
