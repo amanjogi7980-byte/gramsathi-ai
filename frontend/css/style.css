@@ -423,3 +423,6 @@ color:#90ee90;
 .chat-controls button{
     flex: 1;
 }
+.menu-toggle{
+    display: none;
+}
