@@ -1,144 +1,30 @@
 @media (max-width:768px){
 
-    /* Navbar */
-
-    .navbar{
-        position:relative;
-        flex-direction:column;
-        padding:12px;
-        gap:10px;
-    }
-
-    .logo{
-        font-size:22px;
-    }
-
-    #themeBtn{
-        position:absolute;
-        top:10px;
-        right:10px;
-
-        padding:6px 10px;
-
-        font-size:12px;
-    }
-
-    /* Mobile Menu */
-
-    .menu-toggle{
-        display:block;
-
-        background:white;
-
-        border:none;
-
-        font-size:22px;
-
-        padding:5px 10px;
-
-        border-radius:6px;
-
-        cursor:pointer;
-    }
-
-    .nav-links{
-        display:none;
-
-        width:100%;
-
-        flex-direction:column;
-
-        align-items:center;
-
-        gap:8px;
-    }
-
-    .nav-links.show-menu{
-        display:flex;
-    }
-
-    .nav-links li{
-        margin:0;
-    }
-
-    .nav-links a{
-        font-size:14px;
-    }
-
-    /* Hero */
-
     .hero h1{
-        font-size:32px;
+        font-size:36px;
     }
 
     .hero-content{
-        width:95%;
-        padding:20px;
+        width:92%;
+        padding:25px;
     }
-
-    /* Features */
 
     .features{
         grid-template-columns:1fr;
         padding:20px;
     }
 
-    /* Schemes */
-
-    #schemeSearch,
-    #category,
-    .btn{
-        width:100%;
-        max-width:100%;
-    }
-
-    select{
-        width:100%;
-        margin-bottom:10px;
-    }
-
-    /* Chatbot */
-
-    .chat-container{
-        width:98%;
-        margin:15px auto;
-        padding:10px;
-    }
-
-    .chat-box{
-        height:400px;
-        width:100%;
-        font-size:14px;
-    }
-
-    .input-area{
-        display:flex;
-        flex-direction:column;
-        gap:10px;
-    }
-
-    #userInput{
-        width:100%;
-        padding:12px;
-        font-size:16px;
-    }
-
-    .chat-controls{
-        display:flex;
-        flex-direction:column;
-        gap:10px;
-    }
-
-    .chat-controls button{
-        width:100%;
-        padding:12px;
-        font-size:15px;
-    }
-
-    /* Complaint Page */
-
     .complaint-container{
         width:95%;
         padding:20px;
     }
+
+    #schemeSearch,
+    #category,
+    .btn,
+    select{
+        width:100%;
+        max-width:100%;
+    }
+
 }
