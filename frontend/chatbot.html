@@ -11,22 +11,18 @@
 <link rel="stylesheet" href="css/chatbot.css">
 
 </head>
+
 <body>
 
 <nav class="navbar">
-    <button id="themeBtn" onclick="toggleTheme()">
-🌙 Dark Mode
+
+<button id="themeBtn" onclick="toggleTheme()">
+🌙
 </button>
 
 <div class="logo">
-    
-    🌾 GramSathi AI
-    
+🌾 GramSathi AI
 </div>
-
-<button class="menu-toggle" onclick="toggleMenu()">
-☰
-</button>
 
 <ul class="nav-links">
 <li><a href="index.html">Home</a></li>
@@ -39,14 +35,36 @@
 
 </nav>
 
+<!-- Quick Services -->
+
+<div class="features" style="padding:15px;">
+
+<div class="card"
+onclick="window.location.href='schemes.html'">
+🏛 Schemes
+</div>
+
+<div class="card"
+onclick="window.location.href='documents.html'">
+📄 Documents
+</div>
+
+<div class="card"
+onclick="window.location.href='complaints.html'">
+📢 Complaint
+</div>
+
+</div>
+
 <div class="chat-container">
 
-<h2>GramSathi AI Assistant</h2>
+<h2>🤖 GramSathi AI Assistant</h2>
 
 <div id="chatBox" class="chat-box">
 
 <div class="bot-message">
-Namaste 🙏, Main GramSathi AI hoon.
+Namaste 🙏<br>
+Main GramSathi AI hoon.<br>
 Aap kis seva ke baare me jankari chahte hain?
 </div>
 
@@ -59,23 +77,50 @@ type="text"
 id="userInput"
 placeholder="Type your question..."
 >
+
 <div class="chat-controls">
 
-    <button onclick="startVoice()">
-        🎤 Speak
-    </button>
+<button onclick="startVoice()">
+🎤 Speak
+</button>
 
-    <button onclick="sendMessage()">
-        Send
-    </button>
+<button onclick="sendMessage()">
+Send
+</button>
 
-    <button onclick="clearChat()">
-        Clear Chat
-    </button>
+<button onclick="clearChat()">
+Clear
+</button>
+
+</div>
 
 </div>
 
 </div>
+
+<!-- Bottom Navigation -->
+
+<div class="bottom-nav">
+
+<a href="index.html">
+🏠<br>Home
+</a>
+
+<a href="schemes.html">
+🏛<br>Schemes
+</a>
+
+<a href="documents.html">
+📄<br>Docs
+</a>
+
+<a href="chatbot.html">
+🤖<br>AI
+</a>
+
+<a href="complaints.html">
+📢<br>Complaint
+</a>
 
 </div>
 

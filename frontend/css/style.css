@@ -480,3 +480,52 @@ color:#90ee90;
         font-size:13px;
     }
 }
+/* ===== Bottom Navigation ===== */
+
+.bottom-nav{
+
+    position:fixed;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    background:#1b5e20;
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+
+    padding:10px 0;
+
+    z-index:9999;
+
+    box-shadow:0 -2px 10px rgba(0,0,0,0.2);
+}
+
+.bottom-nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    text-align:center;
+
+    font-size:12px;
+
+    font-weight:600;
+}
+
+body{
+
+    padding-bottom:80px;
+}
+
+.dark-mode .bottom-nav{
+
+    background:#111111;
+}

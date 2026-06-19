@@ -3,19 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Document Checker</title>
 
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
+
 </head>
+
 <body>
 
 <nav class="navbar">
-    <button id="themeBtn"
-onclick="toggleTheme()">
+
+<button id="themeBtn" onclick="toggleTheme()">
 🌙
 </button>
-<div class="logo">🌾 GramSathi AI</div>
+
+<div class="logo">
+🌾 GramSathi AI
+</div>
 
 <ul class="nav-links">
 <li><a href="index.html">Home</a></li>
@@ -25,21 +31,28 @@ onclick="toggleTheme()">
 <li><a href="complaints.html">Complaints</a></li>
 <li><a href="about.html">About</a></li>
 </ul>
+
 </nav>
 
 <section class="about">
 
-<h2>Document Checker</h2>
+<h2>📄 Document Checker</h2>
 
-<p>Select a service to view required documents.</p>
+<p>
+Select a service to view required documents.
+</p>
 
 <br><br>
 
-<label for="service">Select Service:</label>
+<label for="service">
+Select Service:
+</label>
 
 <select id="service">
 
-<option value="">Select Service</option>
+<option value="">
+Select Service
+</option>
 
 <option value="income">
 Income Certificate
@@ -59,15 +72,44 @@ PAN Card
 
 </select>
 
-<button onclick="showDocuments()" class="btn">
+<button
+onclick="showDocuments()"
+class="btn">
 Check Documents
 </button>
 
 </section>
 
-<section id="documentsResult" class="features">
-
+<section
+id="documentsResult"
+class="features">
 </section>
+
+<!-- Bottom Navigation -->
+
+<div class="bottom-nav">
+
+<a href="index.html">
+🏠<br>Home
+</a>
+
+<a href="schemes.html">
+🏛<br>Schemes
+</a>
+
+<a href="documents.html">
+📄<br>Docs
+</a>
+
+<a href="chatbot.html">
+🤖<br>AI
+</a>
+
+<a href="complaints.html">
+📢<br>Complaint
+</a>
+
+</div>
 
 <script src="js/documents.js"></script>
 <script src="js/theme.js"></script>
