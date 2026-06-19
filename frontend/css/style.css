@@ -426,3 +426,57 @@ color:#90ee90;
 .menu-toggle{
     display: none;
 }
+/* ===== MOBILE HEADER FIX ===== */
+
+@media (max-width:768px){
+
+    .navbar{
+
+        position:relative;
+
+        padding:10px 15px;
+
+        flex-direction:column;
+
+        gap:8px;
+    }
+
+    .logo{
+
+        font-size:20px;
+    }
+
+    #themeBtn{
+
+        position:absolute;
+
+        top:10px;
+
+        right:10px;
+
+        font-size:12px;
+
+        padding:5px 8px;
+    }
+
+    .nav-links{
+
+        display:flex;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:8px;
+    }
+
+    .nav-links li{
+
+        margin:0;
+    }
+
+    .nav-links a{
+
+        font-size:13px;
+    }
+}
