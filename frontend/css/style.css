@@ -586,3 +586,37 @@ body{
         margin:0;
     }
 }
+.about-tagline{
+
+    font-size:20px;
+
+    color:#666;
+
+    margin-top:10px;
+
+    margin-bottom:30px;
+
+    font-weight:500;
+}
+
+.about{
+
+    max-width:1200px;
+
+    margin:auto;
+}
+
+.about .card{
+
+    text-align:center;
+}
+
+.about .card h2{
+
+    color:#1b5e20;
+}
+
+.dark-mode .about-tagline{
+
+    color:#cccccc;
+}
