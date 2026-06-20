@@ -300,7 +300,7 @@ function toggleVoice(){
 
     if(voiceEnabled){
 
-        if(window.innerWidth <= 768px){
+        if(window.innerWidth <= 768){
     btn.innerHTML = "🔊";
 }else{
     btn.innerHTML = "🔊 Voice ON";
@@ -308,7 +308,7 @@ function toggleVoice(){
 
     }else{
 
-       if(window.innerWidth <= 768px){
+       if(window.innerWidth <= 768){
     btn.innerHTML = "🔇";
 }else{
     btn.innerHTML = "🔇 Voice OFF";
