@@ -342,3 +342,26 @@
     }
 
 }
+/* Mobile Voice Button Fix */
+
+@media(max-width:768px){
+
+    .top-controls{
+
+        top:12px;
+
+        right:12px;
+    }
+
+    #voiceBtn{
+
+        padding:6px 10px;
+
+        font-size:11px;
+
+        border-radius:15px;
+
+        min-width:auto;
+    }
+
+}
