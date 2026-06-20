@@ -143,3 +143,42 @@
         width:100%;
     }
 }
+.quick-actions{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin:15px 0;
+}
+
+.quick-actions button{
+
+    background:#e8f5e9;
+
+    border:none;
+
+    padding:10px 14px;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    transition:0.3s;
+}
+
+.quick-actions button:hover{
+
+    background:#c8e6c9;
+}
+
+.dark-mode .quick-actions button{
+
+    background:#2a2a2a;
+
+    color:white;
+}

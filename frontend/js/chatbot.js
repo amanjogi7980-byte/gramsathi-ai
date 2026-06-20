@@ -237,3 +237,11 @@ window.addEventListener(
         }
     }
 );
+function quickQuestion(question){
+
+    document.getElementById(
+        "userInput"
+    ).value = question;
+
+    sendMessage();
+}
