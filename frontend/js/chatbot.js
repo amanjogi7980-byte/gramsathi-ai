@@ -48,8 +48,13 @@ async function sendMessage() {
     loading.className =
     "bot-message";
 
-    loading.innerText =
-    "Thinking...";
+    loading.innerHTML = `
+<div class="typing">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+`;
 
     chatBox.appendChild(
         loading
