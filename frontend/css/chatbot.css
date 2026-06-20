@@ -130,8 +130,16 @@
 
     .chat-box{
 
-        height:380px;
-    }
+    height:500px;
+
+    overflow-y:auto;
+
+    padding:20px;
+
+    background:#f7f7f7;
+
+    border-radius:10px;
+}
 
     .chat-controls{
 
@@ -241,9 +249,8 @@
 
     gap:15px;
 
-    margin-bottom:20px;
+    margin-bottom:25px;
 }
-
 .bot-avatar{
 
     width:60px;
@@ -263,6 +270,8 @@
     font-size:28px;
 
     color:white;
+
+    flex-shrink:0;
 }
 
 .chat-header p{
@@ -311,4 +320,25 @@
 .dark-mode #voiceBtn{
 
     background:#2e7d32;
+}
+.top-controls{
+
+    position:absolute;
+
+    right:20px;
+
+    top:20px;
+}
+
+.chat-container{
+
+    position:relative;
+}
+@media(max-width:768px){
+
+    .chat-box{
+
+        height:300px;
+    }
+
 }
