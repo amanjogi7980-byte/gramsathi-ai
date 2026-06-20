@@ -14,10 +14,10 @@ model = genai.GenerativeModel(
 
 def get_chat_response(message):
 
-message_lower = message.lower()
+    message_lower = message.lower()
 
-if "farmer schemes" in message_lower:
-    return """
+    if "farmer schemes" in message_lower:
+        return """
 🌾 Farmer Schemes:
 
 1. PM Kisan Samman Nidhi
@@ -26,8 +26,8 @@ if "farmer schemes" in message_lower:
 4. Soil Health Card Scheme
 """
 
-if "student schemes" in message_lower:
-    return """
+    if "student schemes" in message_lower:
+        return """
 🎓 Student Schemes:
 
 1. National Scholarship Portal (NSP)
@@ -36,16 +36,16 @@ if "student schemes" in message_lower:
 4. Merit Cum Means Scholarship
 """
 
-if "ayushman card" in message_lower:
-    return """
+    if "ayushman card" in message_lower:
+        return """
 💳 Ayushman Card:
 
 • Free treatment up to ₹5 lakh per family per year.
 • Apply through Ayushman Bharat portal or CSC center.
 """
 
-if "income certificate" in message_lower:
-    return """
+    if "income certificate" in message_lower:
+        return """
 📄 Income Certificate:
 
 Required Documents:
@@ -55,8 +55,8 @@ Required Documents:
 • Income Proof
 """
 
-if "complaint help" in message_lower:
-    return """
+    if "complaint help" in message_lower:
+        return """
 📢 Complaint Help:
 
 You can file complaints through:
@@ -64,7 +64,7 @@ You can file complaints through:
 • District Office
 • Gram Panchayat
 """
-    
+
     try:
 
         response = model.generate_content(
@@ -86,8 +86,8 @@ Question:
 
         return response.text
 
-   except Exception:
-    return """
+    except Exception:
+        return """
 Maaf kijiye 🙏
 
 AI service abhi temporary busy hai ya daily limit exceed ho gayi hai.
