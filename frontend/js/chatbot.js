@@ -300,14 +300,18 @@ function toggleVoice(){
 
     if(voiceEnabled){
 
-        btn.innerHTML =
-        "🔊 Voice ON";
+        if(window.innerWidth <= 768){
+    btn.innerHTML = "🔊";
+}else{
+    btn.innerHTML = "🔊 Voice ON";
+}
 
     }else{
 
-        window.speechSynthesis.cancel();
-
-        btn.innerHTML =
-        "🔇 Voice OFF";
+       if(window.innerWidth <= 768){
+    btn.innerHTML = "🔇";
+}else{
+    btn.innerHTML = "🔇 Voice OFF";
+}
     }
 }
