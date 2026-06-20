@@ -119,7 +119,7 @@ if(voiceEnabled){
     );
 }
 
-    catch (error) {
+} catch (error) {
 
         loading.remove();
 
@@ -310,5 +310,4 @@ function toggleVoice(){
         btn.innerHTML =
         "🔇 Voice OFF";
     }
-}
 }
