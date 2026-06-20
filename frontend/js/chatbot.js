@@ -94,6 +94,7 @@ async function sendMessage() {
             "gramsathi_chat",
             chatBox.innerHTML
         );
+        addSuggestions();
 
         const speech =
         new SpeechSynthesisUtterance(
@@ -102,11 +103,21 @@ async function sendMessage() {
 
         speech.lang =
         "hi-IN";
+const voiceEnabled =
+document.getElementById(
+    "voiceToggle"
+);
 
-        window.speechSynthesis.speak(
-            speech
-        );
+if(
+    voiceEnabled &&
+    voiceEnabled.checked
+){
 
+    window.speechSynthesis.speak(
+        speech
+    );
+}
+       
     }
 
     catch (error) {
@@ -249,4 +260,31 @@ function quickQuestion(question){
     ).value = question;
 
     sendMessage();
+}
+function addSuggestions(){
+
+    const chatBox =
+    document.getElementById(
+        "chatBox"
+    );
+
+    chatBox.innerHTML += `
+    <div class="bot-message">
+
+        <b>Quick Help:</b><br><br>
+
+        <button onclick="quickQuestion('Farmer Schemes')">
+        🌾 Farmer Schemes
+        </button>
+
+        <button onclick="quickQuestion('Ayushman Card')">
+        💳 Ayushman Card
+        </button>
+
+        <button onclick="quickQuestion('Income Certificate')">
+        📄 Income Certificate
+        </button>
+
+    </div>
+    `;
 }
