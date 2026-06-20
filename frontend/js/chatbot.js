@@ -1,3 +1,4 @@
+let voiceEnabled = true;
 window.onload = function () {
 
     const savedChat =
@@ -96,29 +97,27 @@ async function sendMessage() {
         );
         addSuggestions();
 
-        const speech =
-        new SpeechSynthesisUtterance(
-            data.reply
-        );
+      const shortReply =
+data.reply.substring(0,200);
 
-        speech.lang =
-        "hi-IN";
-const voiceEnabled =
-document.getElementById(
-    "voiceToggle"
+const speech =
+new SpeechSynthesisUtterance(
+    shortReply
 );
 
-if(
-    voiceEnabled &&
-    voiceEnabled.checked
-){
+speech.lang = "hi-IN";
+speech.rate = 1.1;
+speech.pitch = 1;
+speech.volume = 1;
+
+if(voiceEnabled){
+
+    window.speechSynthesis.cancel();
 
     window.speechSynthesis.speak(
         speech
     );
 }
-       
-    }
 
     catch (error) {
 
@@ -287,4 +286,29 @@ function addSuggestions(){
 
     </div>
     `;
+}
+function toggleVoice(){
+
+    voiceEnabled = !voiceEnabled;
+
+    const btn =
+    document.getElementById(
+        "voiceBtn"
+    );
+
+    if(!btn) return;
+
+    if(voiceEnabled){
+
+        btn.innerHTML =
+        "🔊 Voice ON";
+
+    }else{
+
+        window.speechSynthesis.cancel();
+
+        btn.innerHTML =
+        "🔇 Voice OFF";
+    }
+}
 }
